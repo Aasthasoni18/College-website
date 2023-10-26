@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="index1.html"><img scrc="images/logo.jpg"></a>
+            <div class="nav-links" id="navlinks"></div>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <Li><a href="#home">HOME</a></Li>
+                    <Li><a href="#about">ABOUT</a></Li>
+                    <Li><a href="#course">COURSE</a></Li>
+                    <Li><a href="#blog">BLOG</a></Li>
+                    <Li><a href="contact">CONTACT</a></Li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>Our Certificate & Programs </h1>
+    </section>
+
+    <!--------------------blog page content-------------------->
+    <section class="blog-content">
+        <div class="blog-left">
+            <img src="images/degree1.jpg">
+            <h2>Our Certificates & Programs</h2>
+            <p>A sixth form college or college of further education is an educational institution in England,
+                 Wales, Northern Ireland, Belize, the Caribbean, Malta, Norway, Brunei, or Southern Africa,
+                among others, where students aged 16 to 19 typically study for advanced school-level qualifications,
+                 such as A-levels, BTEC, HND or its equivalent and the International Baccalaureate Diploma,
+                 or school-level qualifications such as GCSEs. In Singapore and India, this is known as a junior college. 
+                 The municipal government of the city of Paris uses the phrase "sixth form college" as the English name for a lycée.</p>
+
+                 <p>In some national education systems, secondary schools may be called "colleges" or have "college" as part of their title.
+                    In Australia the term "college" is applied to any private or independent (non-government) primary and, especially,
+                 secondary school as distinct from a state school. Melbourne Grammar School, Cranbrook School, Sydney and The King's School,
+                  Parramatta are considered colleges.</p>
+
+                  <p>In a number of Canadian cities, many government-run secondary schools are called "collegiates" or "collegiate institutes" (C.I.),
+                     a complicated form of the word "college" which avoids the usual "post-secondary" connotation. This is because these secondary 
+                     schools have traditionally focused on academic, rather than vocational, subjects and ability levels (for example, collegiates 
+                     offered Latin while vocational schools offered technical courses). Some private secondary schools (such as Upper Canada College,
+                      Vancouver College) choose to use the word "college" in their names nevertheless.[9] Some secondary schools elsewhere in the country, 
+                      particularly ones within the separate school system, may also use the word "college" or "collegiate" in their names.</p>
+
+                      <div class="comment-box">
+                          <h3>Leave a comment</h3>
+                        <form class="comment-form">
+                            <input type="text" placeholder="Enter Name">
+                            <input type="email" placeholder="Enter email">
+                            <textarea  rows="5" placeholder="Your Comment">
+
+                            </textarea>
+                            <button types="submit" class="hero-btn red-btn">post comment</button>
+                        
+                        </form>
+                      </div>
+        </div>
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Bussiness Analytics</span>
+                <span>21</span>
+            </div>
+
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+
+            <div>
+                <span>Machine Learning</span>
+                <span>25</span>
+            </div>
+
+            <div>
+                <span>Computer Science</span>
+                <span>29</span>
+            </div>
+
+            <div>
+                <span>Auto-Cad</span>
+                <span>42</span>
+            </div>
+
+
+        </div>
+
+    </section>
+   
+    <!----------------Footer------------->
+     <section class="Footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut corrupti perspiciatis non autem consectetur ea aliquid saepe, 
+            facilis quod magnam. Dicta repellendus ratione illo nisi eius iusto tempora odio adipisci.</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkdin"></i>
+
+            </div>
+            
+
+     </section>
+
+
+    <!----------------JavaScript for Toggle menu----------------->
+    <script>
+
+        var navlinks= document.getElementById("navlinks")
+
+        function showmenu(){
+            navlinks.style.right ="0";
+        }
+
+        function hidemenu(){
+            navlinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
