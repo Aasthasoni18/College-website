@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
+</head>
+<body>
+    <section class="Sub-header">
+        <nav>
+            <a href="index1.html"><img scrc="images/logo.jpg"></a>
+            <div class="nav-links" id="navlinks"></div>
+            <div class="nav-links">
+                <i class="fa fa-times" onclick="hidemenu()"></i>
+                <ul>
+                    <Li><a href="index1.html">HOME</a></Li>
+                    <Li><a href="about.html">ABOUT</a></Li>
+                    <Li><a href="course.html">COURSE</a></Li>
+                    <Li><a href="blog.html">BLOG</a></Li>
+                    <Li><a href="contact.html">CONTACT</a></Li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+        </nav>
+       <h1>Our Courses</h1>
+    </section>
+    <!---------------Course--------------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>B.tech | M.tech | MBA</P>
+            <div class="row">
+                <div class="course-col">
+                    <h3>B.tech</h3>
+                    <ul >
+                    <li type="none">⬤Computer Science & Enginnering</li>
+                    <li type="none">⬤  Mechanical Enginnering</li>
+                    <li type="none">⬤Electronics & Telecommunication Enginnering</li>
+                    <li type="none">⬤Civil Enginnering</li>
+                    <li type="none">⬤Information Technology </li>
+                </ul>
+
+                </div>
+                <div class="course-col">
+                    <h3>M.tech
+                    </h3>
+                    <ul>
+                        <li type="none">⬤Artificial Intelligence & Machine Learing</li>
+                        <li type="none">⬤Production Enginnering</li>
+                        <li type="none">⬤Structural Enginnering</li>
+                    </ul>
+
+                </div>
+                <div class="course-col">
+                    <h3>MBA</h3>
+                   <ul>
+                       <li type="none">⬤Marketing Management </li>
+                       <li type="none">⬤Human Resource Management</li>
+                       <li type="none">⬤Finance Management</li>
+                       <li type="none">⬤Production and Operation Management</li>
+                       <li type="none">⬤System Management</li>
+                   </ul>
+                </div>
+             </div>
+    </section>
+
+
+
+
+
+
+
+    
+    <!----------------Footer------------->
+     <section class="Footer">
+         <h4>About Us</h4>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Aut corrupti perspiciatis non autem consectetur ea aliquid saepe, 
+            facilis quod magnam. Dicta repellendus ratione illo nisi eius iusto tempora odio adipisci.</p>
+
+            <div class="icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-linkdin"></i>
+
+            </div>
+            
+
+     </section>
+
+
+    <!----------------JavaScript for Toggle menu----------------->
+    <script>
+
+        var navlinks= document.getElementById("navlinks")
+
+        function showmenu(){
+            navlinks.style.right ="0";
+        }
+
+        function hidemenu(){
+            navlinks.style.right ="-200px";
+        }
+    </script>
+</body>
+</html>
